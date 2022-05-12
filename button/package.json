@@ -1,0 +1,25 @@
+{
+  "name": "meat-cart-button-poc-web",
+  "version": "0.1.0",
+  "description": "A web server for getting order from the meat-cart-button",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "test"
+  },
+  "repository": "git+ssh://git@github.com/byoungokim/meat-cart-button-poc-web.git",
+  "keywords": [
+    "meat-cart",
+    "button"
+  ],
+  "author": "Nick Byoungoh Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byoungokim/meat-cart-button-poc-web/issues"
+  },
+  "homepage": "https://github.com/byoungokim/meat-cart-button-poc-web#readme",
+  "dependencies": {
+    "fastify": "^3.29.0",
+    "fastify-cors": "^6.1.0"
+  }
+}
