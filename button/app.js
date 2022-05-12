@@ -1,4 +1,5 @@
 // Require the framework and instantiate it
+require('dotenv').config();
 const fastify = require('fastify')({ logger: true })
 const fs = require('fs')
 
@@ -37,7 +38,7 @@ fastify.post('/button/push', {},  (request, reply) => {
 // Run the server!
 const start = async () => {
   try {
-    await fastify.listen(3000)
+    await fastify.listen(process.env.PORT ? process.env.PORT : 3000);
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
